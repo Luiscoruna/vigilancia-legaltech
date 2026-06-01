@@ -1,6 +1,84 @@
-id,tipo_de_recurso,query
-Aranzadi_Ley,keyword_busqueda_web,"""Aranzadi LA LEY"""
-Harvey_AI,keyword_busqueda_web,"""Harvey AI"""
-LexisNexis,keyword_busqueda_web,"LexisNexis (legal OR IA)"
+﻿id,tipo_de_recurso,query
+Aranzadi_Digital,keyword_busqueda_web,Aranzadi K+ Digital inteligencia artificial IA AI españa noticias
+Aranzadi_Fusion,keyword_busqueda_web,Aranzadi Fusion K+ Digital inteligencia artificial IA AI españa noticias
+Aranzadi_Infinita,keyword_busqueda_web,Aranzadi Infinita
+Aranzadi_Instituciones,keyword_busqueda_web,Aranzadi Instituciones
+Aranzadi_Ley,keyword_busqueda_web,Aranzadi Ley
+Aranzadi_One,keyword_busqueda_web,Aranzadi One
+Aranzadi_Siapol,keyword_busqueda_web,Aranzadi Siapol
+Aranzadi_Allegra,keyword_busqueda_web,Aranzadi Allegra
+Aranzadi_Supra,keyword_busqueda_web,Aranzadi Supra
+Bitopus,keyword_busqueda_web,Bitopus
+Ciss,keyword_busqueda_web,Ciss
+Colex,keyword_busqueda_web,Colex
+Compliancers,keyword_busqueda_web,Compliancers
+Complylaw,keyword_busqueda_web,Complylaw
+Contract_Box,keyword_busqueda_web,Contract Box
+Gioconda,keyword_busqueda_web,Gioconda
+GPS_Tirant,keyword_busqueda_web,GPS Tirant
+Harvey,keyword_busqueda_web,"""Harvey AI"" (legal OR ""novedades"" OR despachos OR ""BigLaw"")"
+Kleos,keyword_busqueda_web,Kleos
+Kleos_Expert_AI,keyword_busqueda_web,Kleos Expert AI
+Kmaleon,keyword_busqueda_web,Kmaleon
+Legalteca,keyword_busqueda_web,Legalteca
+Legisway,keyword_busqueda_web,Legisway
+LexaGo,keyword_busqueda_web,LexaGo
+Lexhow,keyword_busqueda_web,Lexhow
+Lexsys,keyword_busqueda_web,Lexsys
+Lextools,keyword_busqueda_web,Lextools
+Practico_vLex,keyword_busqueda_web,Practico vLex
+Practicum,keyword_busqueda_web,Practicum
+Quolaw,keyword_busqueda_web,Quolaw
+SIGAT,keyword_busqueda_web,SIGAT
+Sof-IA,keyword_busqueda_web,Sof-IA
+T-Conecta,keyword_busqueda_web,T-Conecta
+Tirant_Epix,keyword_busqueda_web,Tirant Epix
+Tirant_Nexo,keyword_busqueda_web,Tirant Nexo
+Top_juridico,keyword_busqueda_web,Top jurídico
+Tuweb.legal,keyword_busqueda_web,Tuweb.legal
+Vincent_AI,keyword_busqueda_web,"vlex vincent ai clio software workflows vlex ""Vincent AI"" -renault"
+Workday,keyword_busqueda_web,Workday
+HighQ,keyword_busqueda_web,HighQ
+icloudCompliance,keyword_busqueda_web,icloudCompliance
+IESA,keyword_busqueda_web,IESA
+iManage,keyword_busqueda_web,iManage
+JUC,keyword_busqueda_web,JUC
+Jurimetria,keyword_busqueda_web,Jurimetría
+Justicio,keyword_busqueda_web,Justicio
+K+,keyword_busqueda_web,"""Aranzadi Digital K+"" (""IA generativa"" OR ""inteligencia artificial"" OR novedades OR ""nueva versión"" OR ""lanzamiento"")"
+Kaila,keyword_busqueda_web,"""Kaila"" (""Generative AI"" OR ""artificial inteligence"" OR news OR ""latest version"" OR launch)"
+KENDOJ,keyword_busqueda_web,KENDOJ
+Doc_Analyzer,keyword_busqueda_web,Doc Analyzer
+CouncilBox,keyword_busqueda_web,CouncilBox
+Cronus_juridico,keyword_busqueda_web,Cronus jurídico
+Ecoiuris,keyword_busqueda_web,Ecoiuris
+El_Consultor_eLicita,keyword_busqueda_web,El Consultor eLicita
+ESGeo,keyword_busqueda_web,ESGeo
+Eunomia,keyword_busqueda_web,Eunomia
+Gestiona_espublico,keyword_busqueda_web,Gestiona espublico
+Web_mnprogram,dominio_web,mnprogram.com
+Web_tirant,dominio_web,tirant.com
 Web_vlex,dominio_web,vlex.es
+Web_aranzadilaley,dominio_web,aranzadilaley.es
+Web_sepin,dominio_web,sepin.es
+Web_iberley,dominio_web,iberley.es
+Web_globalsuitesolutions,dominio_web,globalsuitesolutions.com
+Web_wolterskluwer,dominio_web,wolterskluwer.com
+Web_espublico,dominio_web,espublico.com
+Web_economistjuristgroup,dominio_web,economistjuristgroup.es
+Web_eqs,dominio_web,eqs.com
+Web_osapiens,dominio_web,osapiens.com
+Web_compliancesofficers,dominio_web,compliancesofficers.com
+Web_karnovgroup,dominio_web,karnovgroup.com
+Web_legora,dominio_web,legora.com
+Web_clio,dominio_web,clio.com
+Web_harvey,dominio_web,harvey.ai
+Web_lexisnexis,dominio_web,lexisnexis.com
+Web_thomsonreuters,dominio_web,thomsonreuters.com
+Web_maite,dominio_web,maite.ai
+Web_biglelegal,dominio_web,biglelegal.com
 Web_ecix,dominio_web,ecix.tech
+Web_lexdoka,dominio_web,lexdoka.com
+Web_ai4ll,dominio_web,ai4ll.com
+Web_littlejohn,dominio_web,littlejohn.ai
+Web_imanage,dominio_web,imanage.com
