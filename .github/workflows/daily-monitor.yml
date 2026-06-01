@@ -1,1 +1,47 @@
+name: Vigilancia Legaltech Diario
 
+on:
+  schedule:
+    - cron: '0 7 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v4
+
+      - name: Instalar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Instalar librerías
+        run: pip install -r requirements.txt
+
+      - name: Ejecutar el rastreador con IA
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python recolector.py
+
+      - name: Guardar la memoria (estado/historial.json)
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add estado/historial.json
+          git commit -m "Actualizar historial de noticias vistas" || echo "No hay noticias nuevas"
+          git push
+
+      - name: Preparar la web para publicar
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './docs'
+
+      - name: Publicar Dashboard en GitHub Pages
+        uses: actions/deploy-pages@v4
