@@ -1,0 +1,6 @@
+id,tipo_de_recurso,query
+Aranzadi_Ley,keyword_busqueda_web,"""Aranzadi LA LEY"""
+Harvey_AI,keyword_busqueda_web,"""Harvey AI"""
+LexisNexis,keyword_busqueda_web,"LexisNexis (legal OR IA)"
+Web_vlex,dominio_web,vlex.es
+Web_ecix,dominio_web,ecix.tech
