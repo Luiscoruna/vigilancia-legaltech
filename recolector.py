@@ -2,15 +2,20 @@ import os
 import csv
 import requests
 from bs4 import BeautifulSoup
-import google.generativeai as genai
+from google import genai
 from datetime import datetime
 import markdown
+import urllib3
 
-# 1. Configurar la API de Gemini
+# Silenciar advertencias al forzar la lectura de webs con certificados inválidos (ej. Aranzadi)
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+
+# 1. Configurar la API de Gemini con la nueva librería
 api_key = os.environ.get("GEMINI_API_KEY")
 if not api_key:
     raise ValueError("No se encontró la API Key de Gemini en los secretos de GitHub.")
-genai.configure(api_key=api_key)
+
+client = genai.Client(api_key=api_key)
 
 # 2. Leer el CSV y extraer texto de las webs
 print("Iniciando rastreo de fuentes...")
@@ -28,7 +33,8 @@ with open('fuentes.csv', mode='r', encoding='utf-8') as f:
             url = f"https://{query}" if not query.startswith('http') else query
             try:
                 headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
-                response = requests.get(url, headers=headers, timeout=10)
+                # Añadimos verify=False para saltar bloqueos de SSL
+                response = requests.get(url, headers=headers, timeout=10, verify=False)
                 
                 soup = BeautifulSoup(response.text, 'html.parser')
                 texto_limpio = ' '.join(soup.stripped_strings)[:2000]
@@ -66,8 +72,11 @@ Estructura tu respuesta en Markdown usando estos encabezados (omite los que est�
 - ## Radar de Posicionamiento (Cambios detectados en sus webs)
 """
 
-model = genai.GenerativeModel('gemini-1.5-flash')
-respuesta = model.generate_content(prompt)
+# Usamos la sintaxis del nuevo SDK de Google
+respuesta = client.models.generate_content(
+    model='gemini-2.5-flash',
+    contents=prompt,
+)
 
 html_generado_por_ia = markdown.markdown(respuesta.text)
 
