@@ -3,6 +3,7 @@ import csv
 import requests
 from bs4 import BeautifulSoup
 from google import genai
+from google.genai import types
 from datetime import datetime
 import markdown
 import urllib3
@@ -10,7 +11,7 @@ import urllib3
 # Silenciar advertencias al forzar la lectura de webs con certificados inválidos (ej. Aranzadi)
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-# 1. Configurar la API de Gemini con la nueva librería
+# 1. Configurar la API de Gemini
 api_key = os.environ.get("GEMINI_API_KEY")
 if not api_key:
     raise ValueError("No se encontró la API Key de Gemini en los secretos de GitHub.")
@@ -33,7 +34,6 @@ with open('fuentes.csv', mode='r', encoding='utf-8') as f:
             url = f"https://{query}" if not query.startswith('http') else query
             try:
                 headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
-                # Añadimos verify=False para saltar bloqueos de SSL
                 response = requests.get(url, headers=headers, timeout=10, verify=False)
                 
                 soup = BeautifulSoup(response.text, 'html.parser')
@@ -47,35 +47,39 @@ with open('fuentes.csv', mode='r', encoding='utf-8') as f:
 
 texto_consolidado = "\n".join(textos_web)
 
-# 3. Mandar el cerebro a trabajar (El Prompt)
-print("Analizando datos con Gemini...")
+# 3. Mandar el cerebro a trabajar (Prompt Híbrido + Buscador)
+print("Analizando datos con Gemini y buscando en internet...")
 fecha_hoy = datetime.now().strftime("%d de %B de %Y")
 
 prompt = f"""
-Actúa como un analista de legaltech especializado en el mercado español e inteligencia artificial aplicada al sector jurídico.
-Tu tarea es redactar un boletín diario de inteligencia competitiva para la dirección de Producto.
+Actúa como un analista de legaltech en España y experto en inteligencia artificial jurídica.
+Tu tarea es redactar el boletín diario de inteligencia competitiva para la dirección de Producto.
 
 Hoy es {fecha_hoy}.
 
-A continuación, te proporciono un volcado de textos extraídos HOY DIRECTAMENTE de las páginas principales de la competencia:
+FUENTES DIRECTAS (Textos extraídos hoy de sus webs):
 {texto_consolidado}
 
-Instrucciones:
-1. Analiza el texto y extrae CUALQUIER novedad: lanzamientos, nuevos módulos, webinars (ej. Legora, LawDroid), eventos, artículos corporativos, integraciones menores o cambios de mensaje de marketing.
-2. No descartes información por no ser "disruptiva". Todo movimiento es relevante para la monitorización.
-3. Si tras analizar TODO el texto realmente no hay nada aprovechable, indica de forma clara y profesional: "El escaneo automático no ha detectado variaciones ni publicaciones destacables en los dominios analizados durante el día de hoy."
-4. Escribe en español, con un tono analítico y directo. 
+INSTRUCCIONES DE ANÁLISIS:
+1. ESCAPARATES: Extrae lanzamientos, nuevos módulos o cambios de marketing de los textos proporcionados. INCLUYE SIEMPRE el enlace a la web en formato Markdown (ej. [vLex](https://vlex.es)) sacado de la etiqueta 'WEB:'.
+2. BÚSQUEDA EXTERNA: Usa tu herramienta de búsqueda en internet. Busca noticias de hoy ({fecha_hoy}) sobre IA Jurídica y Legaltech. INCLUYE SIEMPRE EL ENLACE a la fuente original de la noticia. PRIORIZA noticias, webinars, congresos o eventos donde participen las empresas mencionadas en las FUENTES DIRECTAS. Si encuentras movimientos muy disruptivos a nivel global (ej. Harvey AI, grandes inversiones), inclúyelos también.
+3. Si hay webs con errores de acceso (como Cloudflare o bloqueos), menciónalo al final.
+4. Redacta en español, con tono analítico, corporativo y orientado a la toma de decisiones estratégicas.
 
-Estructura tu respuesta en Markdown usando estos encabezados (omite los que estén vacíos):
-- ## Novedades y Actualizaciones
-- ## Eventos y Webinars del Sector
-- ## Radar de Posicionamiento (Cambios detectados en sus webs)
+Estructura tu respuesta en Markdown usando estos encabezados:
+- ## Novedades en los Escaparates (Cambios detectados en sus webs)
+- ## Ecosistema y Eventos de Hoy (Noticias y webinars detectados en internet)
+- ## Radar de Posicionamiento estratégico
+- ## Observaciones Técnicas
 """
 
-# Usamos la sintaxis del nuevo SDK de Google
+# Encendemos la herramienta de búsqueda de Google para la IA
 respuesta = client.models.generate_content(
     model='gemini-2.5-flash',
     contents=prompt,
+    config=types.GenerateContentConfig(
+        tools=[{"google_search": {}}]
+    )
 )
 
 html_generado_por_ia = markdown.markdown(respuesta.text)
