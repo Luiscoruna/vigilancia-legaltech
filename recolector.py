@@ -60,13 +60,15 @@ Hoy es {fecha_hoy}.
 FUENTES DIRECTAS (Textos extraídos hoy de sus webs):
 {texto_consolidado}
 
-INSTRUCCIONES DE ANÁLISIS:
-1. ESCAPARATES: Extrae lanzamientos, nuevos módulos o cambios de marketing de los textos proporcionados. INCLUYE SIEMPRE el enlace a la web en formato Markdown (ej. [vLex](https://vlex.es)) sacado de la etiqueta 'WEB:'.
-2. BÚSQUEDA EXTERNA: Usa tu herramienta de búsqueda en internet. Busca noticias de hoy ({fecha_hoy}) sobre IA Jurídica y Legaltech. INCLUYE SIEMPRE EL ENLACE a la fuente original de la noticia. PRIORIZA noticias, webinars, congresos o eventos donde participen las empresas mencionadas en las FUENTES DIRECTAS. Si encuentras movimientos muy disruptivos a nivel global (ej. Harvey AI, grandes inversiones), inclúyelos también.
+INSTRUCCIONES DE FORMATO Y ENLACES OBLIGATORIOS:
+1. SECCIÓN ESCAPARATES: Extrae lanzamientos o cambios de los textos proporcionados. Cada mención DEBE llevar su enlace extraído de la etiqueta 'WEB:' en formato Markdown (ejemplo: [vLex](https://vlex.es)).
+2. SECCIÓN ECOSISTEMA (BÚSQUEDA EXTERNA): Usa tu herramienta de búsqueda en internet para buscar noticias reales de HOY ({fecha_hoy}) sobre IA Jurídica y Legaltech. 
+   ¡ORDEN CRÍTICA!: No dejes las noticias en texto plano. Cada vez que menciones una noticia de internet (como los anuncios de Harvey, Wolters Kluwer, LexisNexis, etc.), DEBES incluir la URL real que te devuelva el buscador en formato Markdown (ejemplo: [Ver noticia en Wolters Kluwer](https://url-real-encontrada.com)).
+   Además, al final de este bloque de Ecosistema, añade OBLIGATORIAMENTE un listado bajo el título '### Fuentes web consultadas hoy' donde listes de forma explícita las URLs completas de los artículos originales que has leído en Google.
 3. Si hay webs con errores de acceso (como Cloudflare o bloqueos), menciónalo al final.
-4. Redacta en español, con tono analítico, corporativo y orientado a la toma de decisiones estratégicas.
+4. Redacta en español, con tono analítico, corporativo y directo.
 
-Estructura tu respuesta en Markdown usando estos encabezados:
+Estructura tu respuesta en Markdown usando estos encabezados exactos:
 - ## Novedades en los Escaparates (Cambios detectados en sus webs)
 - ## Ecosistema y Eventos de Hoy (Noticias y webinars detectados en internet)
 - ## Radar de Posicionamiento estratégico
