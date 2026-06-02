@@ -1,5 +1,8 @@
 name: Vigilancia Legaltech Diario
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 on:
   schedule:
     - cron: '0 7 * * *'
@@ -34,7 +37,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add estado/historial.json
+          git add estado/historial.json || true
           git commit -m "Actualizar historial de noticias vistas" || echo "No hay noticias nuevas"
           git push
 
