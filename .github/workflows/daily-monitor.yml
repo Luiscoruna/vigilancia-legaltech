@@ -1,12 +1,13 @@
-name: Vigilancia Legaltech Diario
+name: Vigilancia Legaltech
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 on:
   schedule:
+    # Todos los días a las 07:00 UTC (09:00 AM hora española)
     - cron: '0 7 * * *'
-  workflow_dispatch:
+  workflow_dispatch: # Permite lanzarlo a mano desde la pestaña Actions
 
 permissions:
   contents: write
@@ -23,7 +24,7 @@ jobs:
       - name: Instalar Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
+          python-version: '3.11'
 
       - name: Instalar librerías
         run: pip install -r requirements.txt
@@ -33,12 +34,14 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python recolector.py
 
-      - name: Guardar la memoria (estado/historial.json)
+      - name: Guardar la memoria y el boletín en el repositorio
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add estado/historial.json || true
-          git commit -m "Actualizar historial de noticias vistas" || echo "No hay noticias nuevas"
+          # Guardamos toda la carpeta de estados y la web generada
+          git add estado/ docs/
+          # Solo hace commit si encuentra cambios reales, evitando que el flujo falle
+          git diff --staged --quiet || git commit -m "Actualización automática: boletín y estado de memoria"
           git push
 
       - name: Preparar la web para publicar
