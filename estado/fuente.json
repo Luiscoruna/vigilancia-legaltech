@@ -143,6 +143,9 @@
     "https://imanage.com/resources/resource-center/blog",
     "https://imanage.com/resources/resource-center/news/?sort=date",
     "https://imanage.com/resources/resource-center/webinars",
+    "https://karnovgroup.com/en/section/about",
+    "https://karnovgroup.com/en/section/our-solutions",
+    "https://karnovgroup.com/en/section/press/press-releases/?regulatory=true",
     "https://legal.thomsonreuters.com/blog/inside-cocounsel-legal-the-human-intelligence-behind-ai-innovation",
     "https://legal.thomsonreuters.com/en/legal",
     "https://legal.thomsonreuters.com/en/legal/business-development",
@@ -277,6 +280,7 @@
     "https://vlex.es/vlex-labs",
     "https://vlex.es/vlex-library",
     "https://vlex.es/vlex-tv",
+    "https://wolterskluwer.com/cs-cz",
     "https://wolterskluwer.com/en",
     "https://wolterskluwer.com/en-ca",
     "https://wolterskluwer.com/en/news",
@@ -285,6 +289,7 @@
     "https://wolterskluwer.com/en/news/pr-cch-tagetik-global-intouch26-polling-results",
     "https://wolterskluwer.com/en/news/the-legal-function-in-the-acceleration-phase-of-ai",
     "https://wolterskluwer.com/en/news/validation-framework-evaluating-clinical-ai-point-of-care",
+    "https://wolterskluwer.com/en/news/wolters-kluwer-and-openai-expand-enterprise-ai-collaboration-to-advance-trusted-expert-ai",
     "https://wolterskluwer.com/en/news/wolters-kluwer-and-radiological-society-of-north-america",
     "https://wolterskluwer.com/en/news/wolters-kluwer-first-quarter-2026-trading-update",
     "https://wolterskluwer.com/en/news/wolters-kluwer-releases-2025-annual-report",
@@ -370,5 +375,5 @@
     "https://www.wolterskluwer.com/en",
     "https://www.wolterskluwer.com/en/news?compositeLink=%7BB18EC43C-071F-4CE0-B997-3D06A89F9AD4%7D"
   ],
-  "ultima_actualizacion": "2026-06-02T15:37:42"
+  "ultima_actualizacion": "2026-06-03T09:34:22"
 }
