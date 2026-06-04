@@ -1,6 +1,7 @@
 {
   "texto_hash": "8927aa1c2a4864474a2460d7e744e80975895f8ae1b9c66b6661514242fa011c",
   "enlaces_conocidos": [
+    "https://ai4ll.com/contacto",
     "https://app.maite.ai/sign-in",
     "https://app.maite.ai/sign-up",
     "https://ayuda.maite.ai/support/solutions",
@@ -176,6 +177,11 @@
     "https://legora.com/solutions/banking",
     "https://legora.com/solutions/litigation",
     "https://legora.com/solutions/tax",
+    "https://lexisnexis.com/en-us",
+    "https://lexisnexis.com/en-us/privacy/default.page",
+    "https://lexisnexis.com/en-us/product-login.page",
+    "https://lexisnexis.com/en-us/terms/default.page",
+    "https://lexisnexis.com/en-us/terms/privacy-policy.page",
     "https://libreria.tirant.com/es",
     "https://maite.ai/administraciones-publicas",
     "https://maite.ai/asesorias-y-gestorias",
@@ -215,6 +221,7 @@
     "https://osapiens.com/partner",
     "https://osapiens.com/webinars",
     "https://panel.compliancesofficers.com/shop",
+    "https://risk.lexisnexis.com?trmid=CMCXRKEV.corporate.gateway.WS3P-1086803",
     "https://sepin.es/cdn-cgi/l/email-protection",
     "https://sepin.es/consultas-administrador-de-fincas/?UD_Origen_Interno=cc462bce-f08d-4491-af34-dc614e89eb5b",
     "https://sepin.es/cronus-juridico/doctrina",
@@ -238,12 +245,14 @@
     "https://thomsonreuters.com/en/press-releases",
     "https://tirant.com/actualidad",
     "https://tirant.com/actualidad/noticias-tirant",
+    "https://tirant.com/author/comunicaciontirant",
     "https://tirant.com/author/corporativa_editor_one",
     "https://tirant.com/category/noticias-tirant",
     "https://tirant.com/category/trabaja-con-nosotros",
     "https://tirant.com/contacto",
     "https://tirant.com/empresa",
     "https://tirant.com/mx",
+    "https://tirant.com/noticias-tirant/noticia-12-libros-imprescindibles-sobre-cambio-climatico",
     "https://tirant.com/noticias-tirant/noticia-los-riesgos-de-confiar-en-las-ia-generalistas-para-el-trabajo-juridico-y-legal",
     "https://tirant.com/noticias-tirant/noticia-mas-de-100-expertos-se-dan-cita-en-el-congreso-tirant-nacional-de-reestructuraciones",
     "https://tirant.com/noticias-tirant/noticia-tirant-lo-blanch-presente-en-el-v-congreso-de-la-abogacia-de-castilla-y-leon-celebrado-en-zamora",
@@ -331,6 +340,8 @@
     "https://www.karnovgroup.com/en/section/press/press-releases",
     "https://www.karnovgroup.com/en/strategy",
     "https://www.karnovgroup.com/sv",
+    "https://www.lexisnexis.com/en-us/terms/copyright.page",
+    "https://www.lexisnexis.com/systems/privacy-cookies/?locale=en-us",
     "https://www.maite.ai/blog",
     "https://www.maite.ai/casos-de-exito",
     "https://www.maite.ai/casos-de-exito/ausum",
@@ -361,5 +372,5 @@
     "https://www.wolterskluwer.com/en",
     "https://www.wolterskluwer.com/en/news?compositeLink=%7BB18EC43C-071F-4CE0-B997-3D06A89F9AD4%7D"
   ],
-  "ultima_actualizacion": "2026-06-03T13:37:31"
+  "ultima_actualizacion": "2026-06-04T10:37:54"
 }
