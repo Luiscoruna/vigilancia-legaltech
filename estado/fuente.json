@@ -142,6 +142,7 @@
     "https://harvey.ai/en-US/customers",
     "https://harvey.ai/en-US/newsroom",
     "https://harvey.ai/en-US/platform",
+    "https://harvey.ai/en-US/platform/agents",
     "https://harvey.ai/en-US/platform/assistant",
     "https://harvey.ai/en-US/platform/ecosystem",
     "https://harvey.ai/en-US/platform/harvey-mobile",
@@ -383,6 +384,7 @@
     "https://www.biglelegal.com/press/bigle-ranks-26-in-deloitte-technology-fast-50-2026",
     "https://www.eqs.com/about-eqs/investors/news",
     "https://www.eqs.com/about-eqs/press",
+    "https://www.eqs.com/compliance-blog/compliance-in-2026-ai-governance-risk-compliance-trends",
     "https://www.eqs.com/compliance-blog/forrester-tei-study-how-to-reduce-compliance-costs",
     "https://www.eqs.com/compliance-knowledge/blog",
     "https://www.eqs.com/compliance-knowledge/webinars",
@@ -462,5 +464,5 @@
     "https://www.wolterskluwer.com/en",
     "https://www.wolterskluwer.com/en/news?compositeLink=%7BB18EC43C-071F-4CE0-B997-3D06A89F9AD4%7D"
   ],
-  "ultima_actualizacion": "2026-07-22T09:24:31"
+  "ultima_actualizacion": "2026-07-23T09:23:00"
 }
