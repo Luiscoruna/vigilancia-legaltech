@@ -144,6 +144,7 @@
     "https://harvey.ai/en-US/platform",
     "https://harvey.ai/en-US/platform/agents",
     "https://harvey.ai/en-US/platform/assistant",
+    "https://harvey.ai/en-US/platform/command-center",
     "https://harvey.ai/en-US/platform/ecosystem",
     "https://harvey.ai/en-US/platform/harvey-mobile",
     "https://harvey.ai/en-US/platform/knowledge",
@@ -466,5 +467,5 @@
     "https://www.wolterskluwer.com/en",
     "https://www.wolterskluwer.com/en/news?compositeLink=%7BB18EC43C-071F-4CE0-B997-3D06A89F9AD4%7D"
   ],
-  "ultima_actualizacion": "2026-08-04T09:37:08"
+  "ultima_actualizacion": "2026-08-05T09:34:18"
 }
