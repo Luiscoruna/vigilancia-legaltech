@@ -148,6 +148,7 @@
     "https://harvey.ai/en-US/platform/ecosystem",
     "https://harvey.ai/en-US/platform/harvey-mobile",
     "https://harvey.ai/en-US/platform/knowledge",
+    "https://harvey.ai/en-US/platform/memory",
     "https://harvey.ai/en-US/platform/shared-spaces",
     "https://harvey.ai/en-US/platform/vault",
     "https://harvey.ai/en-US/press",
@@ -266,6 +267,7 @@
     "https://osapiens.com/en/about-us",
     "https://osapiens.com/en/careers",
     "https://osapiens.com/en/events-webinars/upcoming-webinars/2026/digital-product-passport-regulation-what-companies-need-to-prepare-for-now",
+    "https://osapiens.com/en/events-webinars/upcoming-webinars/2026/ppwr-one-month-after-the-deadline",
     "https://osapiens.com/en/platform",
     "https://osapiens.com/en/regulations/csddd",
     "https://osapiens.com/en/regulations/csrd",
@@ -421,10 +423,14 @@
     "https://www.eqs.com/compliance-webinars/why-they-go-silent",
     "https://www.eqs.com/contact-our-sales-team",
     "https://www.eqs.com/de",
+    "https://www.eqs.com/de/?gclid=eaiaiqobchmikq-nrpjakgmv2pnqbh0rvb4seaayasaaeglonfd_bwe",
     "https://www.eqs.com/es",
+    "https://www.eqs.com/es/?gclid=eaiaiqobchmikq-nrpjakgmv2pnqbh0rvb4seaayasaaeglonfd_bwe",
     "https://www.eqs.com/fr",
+    "https://www.eqs.com/fr/?gclid=eaiaiqobchmikq-nrpjakgmv2pnqbh0rvb4seaayasaaeglonfd_bwe",
     "https://www.eqs.com/ir-services/newswire",
     "https://www.eqs.com/it",
+    "https://www.eqs.com/it/?gclid=eaiaiqobchmikq-nrpjakgmv2pnqbh0rvb4seaayasaaeglonfd_bwe",
     "https://www.eqs.com/newsletter",
     "https://www.globalsuitesolutions.com/blog",
     "https://www.globalsuitesolutions.com/category/webinar-en",
@@ -493,5 +499,5 @@
     "https://www.wolterskluwer.com/en",
     "https://www.wolterskluwer.com/en/news?compositeLink=%7BB18EC43C-071F-4CE0-B997-3D06A89F9AD4%7D"
   ],
-  "ultima_actualizacion": "2026-08-25T07:40:46"
+  "ultima_actualizacion": "2026-08-26T07:41:56"
 }
