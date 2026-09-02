@@ -146,11 +146,13 @@
     "https://harvey.ai/en-US/platform/agents",
     "https://harvey.ai/en-US/platform/assistant",
     "https://harvey.ai/en-US/platform/command-center",
+    "https://harvey.ai/en-US/platform/contract-intelligence",
     "https://harvey.ai/en-US/platform/ecosystem",
     "https://harvey.ai/en-US/platform/harvey-mobile",
     "https://harvey.ai/en-US/platform/knowledge",
     "https://harvey.ai/en-US/platform/memory",
     "https://harvey.ai/en-US/platform/shared-spaces",
+    "https://harvey.ai/en-US/platform/spaces",
     "https://harvey.ai/en-US/platform/vault",
     "https://harvey.ai/en-US/press",
     "https://harvey.ai/en-US/security",
@@ -277,6 +279,7 @@
     "https://osapiens.com/en/regulations/ppwr",
     "https://osapiens.com/en/resources-overview",
     "https://osapiens.com/en/resources/company-news/2026/osapiens-acquires-the-nasdaq-metrio-platform-and-customers-and-accelerates-its-u.s.-expansion",
+    "https://osapiens.com/en/resources/company-news/2026/osapiens-positioned-as-a-leader-in-the-green-quadrant-for-supply-chain-sustainability-software-2026",
     "https://osapiens.com/en/resources/company-news/2026/osapiens-recognized-as-a-cool-vendor-in-the-2025-gartner-R-cool-vendors-supply-chain-sustainability-digital-solutions",
     "https://osapiens.com/en/solutions",
     "https://osapiens.com/en/solutions/agent-factory",
@@ -343,6 +346,7 @@
     "https://tirant.com/noticias-tirant/noticia-de-abogado-generalista-a-especialista-por-que-la-especializacion-es-clave-y-como-elegir-tu-area",
     "https://tirant.com/noticias-tirant/noticia-el-grupo-tirant-llega-a-argentina-con-la-integracion-de-eldial",
     "https://tirant.com/noticias-tirant/noticia-el-mejor-software-para-administradores-de-fincas-analisis-de-tirant-propiedad-horizontal",
+    "https://tirant.com/noticias-tirant/noticia-grupo-tirant-llega-a-argentina-queremos-consolidarnos-como-la-compania-de-referencia-en-informacion-juridica-en-espana-y-america-latina",
     "https://tirant.com/noticias-tirant/noticia-la-transformacion-economica-y-el-reto-del-sistema-fiscal-global",
     "https://tirant.com/noticias-tirant/noticia-las-comisiones-de-disuasion",
     "https://tirant.com/noticias-tirant/noticia-los-riesgos-de-confiar-en-las-ia-generalistas-para-el-trabajo-juridico-y-legal",
@@ -504,5 +508,5 @@
     "https://www.wolterskluwer.com/en",
     "https://www.wolterskluwer.com/en/news?compositeLink=%7BB18EC43C-071F-4CE0-B997-3D06A89F9AD4%7D"
   ],
-  "ultima_actualizacion": "2026-09-01T12:19:14"
+  "ultima_actualizacion": "2026-09-02T11:56:03"
 }
