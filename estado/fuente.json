@@ -131,6 +131,7 @@
     "https://harvey.ai/agents",
     "https://harvey.ai/blog",
     "https://harvey.ai/blog/a-new-era-of-collaboration-for-legal-and-professional-services",
+    "https://harvey.ai/blog/harvey-raises-dollar550m-at-a-dollar155b-valuation-to-help-legal-teams-own-their-intelligence",
     "https://harvey.ai/command-center",
     "https://harvey.ai/contract-intelligence",
     "https://harvey.ai/customers",
@@ -164,11 +165,16 @@
     "https://harvey.ai/en-US/solutions/transactional",
     "https://harvey.ai/newsroom",
     "https://harvey.ai/platform",
+    "https://harvey.ai/platform/agents",
     "https://harvey.ai/platform/assistant",
+    "https://harvey.ai/platform/command-center",
+    "https://harvey.ai/platform/contract-intelligence",
     "https://harvey.ai/platform/ecosystem",
     "https://harvey.ai/platform/harvey-mobile",
     "https://harvey.ai/platform/knowledge",
+    "https://harvey.ai/platform/memory",
     "https://harvey.ai/platform/shared-spaces",
+    "https://harvey.ai/platform/spaces",
     "https://harvey.ai/platform/vault",
     "https://harvey.ai/press",
     "https://harvey.ai/security",
@@ -399,6 +405,7 @@
     "https://vlex.es/vlex-tv",
     "https://vlex.es/work",
     "https://vlex.es/work/schedule-a-demo",
+    "https://vlex.es/work/signup",
     "https://vlex.es/work/signup?cta=PIWork",
     "https://wolterskluwer.com/cs-cz",
     "https://wolterskluwer.com/en",
@@ -520,5 +527,5 @@
     "https://www.wolterskluwer.com/en",
     "https://www.wolterskluwer.com/en/news?compositeLink=%7BB18EC43C-071F-4CE0-B997-3D06A89F9AD4%7D"
   ],
-  "ultima_actualizacion": "2026-09-10T12:01:58"
+  "ultima_actualizacion": "2026-09-12T11:26:50"
 }
